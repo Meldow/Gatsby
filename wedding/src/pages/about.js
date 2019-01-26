@@ -1,11 +1,13 @@
-import React from "react"
+import React from 'react'
 import { Link } from 'gatsby';
-import Header from "../components/header"
+import Header from '../components/header'
+import Layout from '../components/layout'
 
 export default () => (
-    <div style={{ color: `teal` }}>
-        <Header headerText="About this website"/>
-        <p>Such wow. Very React.</p>
-        <Link to="/">Home</Link>
-    </div>
+    <Layout>
+        <div style={ { color: `teal` } }>
+            <Header headerText="About this website" />
+            <p>Such wow. Very React.</p>
+        </div>
+    </Layout>
 )
