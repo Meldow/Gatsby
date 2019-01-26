@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby';
+import 'semantic-ui-css/semantic.min.css'
 
 const ListLink = props => (
     <li style={ { display: `inline-block`, marginRight: `1rem` } }>
@@ -8,7 +9,7 @@ const ListLink = props => (
 );
 
 export default ({ children }) => (
-    <div style={ { margin: `3rem auto`, maxWidth: 650, padding: `0 1rem` } }>
+    <div>
         <header style={ { marginBottom: `1.5rem` } }>
             <Link to="/" style={ { textShadow: `none`, backgroundImage: `none` } }>
                 <h3 style={ { display: `inline` } }>MySweetSite</h3>
