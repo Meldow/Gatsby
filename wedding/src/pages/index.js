@@ -4,25 +4,26 @@ import Main from '../components/main'
 import Instagram from '../components/instagram'
 import Savethedate from '../components/savethedate'
 import Location from '../components/location'
-import { Grid } from 'semantic-ui-react';
+import Grid from '@material-ui/core/Grid';
+import { library } from '@fortawesome/fontawesome-svg-core'
+
+import { faMapMarkedAlt } from '@fortawesome/free-solid-svg-icons'
+
+
+library.add(faMapMarkedAlt)
 
 export default () => (
     <Layout>
-        <Grid container verticalAlign='middle' columns={ 2 } centered>
-            <Grid.Row>
-                <Grid.Column>
-                    <Main />
-                </Grid.Column>
-                <Grid.Column>
-                    <Savethedate />
-                </Grid.Column>
-                <Grid.Column>
-                    <Instagram />
-                </Grid.Column>
-                <Grid.Column>
-                    <Location />
-                </Grid.Column>
-            </Grid.Row>
+        <Grid
+            container
+            direction="column"
+            justify="center"
+            alignItems="center"
+        >
+            <Grid item><Main /></Grid>
+            <Grid item><Savethedate /></Grid>
+            <Grid item><Instagram /></Grid>
+            <Grid item><Location /></Grid>
         </Grid>
     </Layout>
 )

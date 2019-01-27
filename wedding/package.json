@@ -12,6 +12,11 @@
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.12",
+    "@fortawesome/free-solid-svg-icons": "^5.6.3",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "@material-ui/core": "^3.9.1",
+    "@material-ui/icons": "^3.0.2",
     "gatsby": "^2.0.76",
     "gatsby-plugin-typography": "^2.2.5",
     "react": "^16.5.1",
@@ -19,6 +24,7 @@
     "react-typography": "^0.16.18",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^0.84.0",
+    "typeface-roboto": "0.0.54",
     "typography": "^0.16.18"
   },
   "repository": {
@@ -27,5 +33,8 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.6.3"
   }
 }

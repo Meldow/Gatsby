@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby';
-import 'semantic-ui-css/semantic.min.css'
+import 'typeface-roboto';
 
 const ListLink = props => (
     <li style={ { display: `inline-block`, marginRight: `1rem` } }>

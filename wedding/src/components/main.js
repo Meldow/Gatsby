@@ -1,9 +1,8 @@
 import React from "react"
-import us from "../images/us.png"
+import us from "../images/us_450x350.png"
 
 export default () => (
     <div>
-        Main Page
-        <img src={us} alt="Logo" />
+        <img src={us} alt="alex&rita" />
     </div>
 )
