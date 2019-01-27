@@ -9,21 +9,28 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 
 import { faMapMarkedAlt } from '@fortawesome/free-solid-svg-icons'
 
-
-library.add(faMapMarkedAlt)
+library.add(faMapMarkedAlt);
 
 export default () => (
     <Layout>
         <Grid
             container
-            direction="column"
+            direction="row"
             justify="center"
             alignItems="center"
         >
             <Grid item><Main /></Grid>
             <Grid item><Savethedate /></Grid>
+        </Grid>
+        <Grid
+            container
+            direction="row"
+            justify="space-evenly"
+            alignItems="center"
+        >
             <Grid item><Instagram /></Grid>
             <Grid item><Location /></Grid>
         </Grid>
+
     </Layout>
 )

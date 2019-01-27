@@ -12,13 +12,11 @@ export default ({ children }) => (
     <div>
         <header style={ { marginBottom: `1.5rem` } }>
             <Link to="/" style={ { textShadow: `none`, backgroundImage: `none` } }>
-                <h3 style={ { display: `inline` } }>MySweetSite</h3>
+                <h3 style={ { display: `inline` } }>LopesCosta</h3>
             </Link>
             <ul style={ { listStyle: `none`, float: `right` } }>
-                <ListLink to="/">Home</ListLink>
-                <ListLink to="/about/">About</ListLink>
-                <ListLink to="/about-css-modules/">About CSS</ListLink>
-                <ListLink to="/contact/">Contact</ListLink>
+                <ListLink to="/when/">When</ListLink>
+                <ListLink to="/where/">Where</ListLink>
             </ul>
         </header>
         { children }
