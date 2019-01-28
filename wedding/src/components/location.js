@@ -1,37 +1,37 @@
 import React from 'react'
 import Grid from '@material-ui/core/Grid';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
-const style = {
-    span: {
-        padding: '0.3rem'
-    },
-    cursor: {
-        cursor: 'pointer'
-    }
-};
+import css from './location.module.css'
+import Card from '@material-ui/core/Card';
+import CardContent from '@material-ui/core/CardContent';
+import { CardHeader } from '@material-ui/core';
 
 export default () => (
-    <div>
-        <Grid container direction={ 'column' }>
+    <Card raised>
+        <CardHeader title="Where?"/>
+        <CardContent>
+            <Grid
+                container
+                direction="column"
+                justify="center"
+                alignItems="center"
+                spacing={ 16 }
+                className={ css.space }>
             <Grid item>
                 <div
-                    style={ style.cursor }
+                    className={ css.cursor }
                     onClick={ () => window.open('https://goo.gl/maps/Liku3ZaTx982') }>
-                    <FontAwesomeIcon icon="map-marked-alt" />
-                    <span style={ style.span }>Marriage ceremony</span>
+                    <h2><FontAwesomeIcon icon="map-marked-alt" /> Ceremony</h2>
                 </div>
-
             </Grid>
-            <Grid>
+            <Grid item>
                 <div
-                    style={ style.cursor }
+                    className={ css.cursor }
                     onClick={ () => window.open('https://goo.gl/maps/ay3SvnUceoK2') }>
-                    <FontAwesomeIcon icon="map-marked-alt" />
-                    <span style={ style.span }>Wedding reception</span>
+                    <h2><FontAwesomeIcon icon="map-marked-alt" /> Reception</h2>
                 </div>
-
             </Grid>
         </Grid>
-    </div>
+        </CardContent>
+    </Card>
 )

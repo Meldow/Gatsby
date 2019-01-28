@@ -6,7 +6,7 @@ import Savethedate from '../components/savethedate'
 import Location from '../components/location'
 import Grid from '@material-ui/core/Grid';
 import { library } from '@fortawesome/fontawesome-svg-core'
-
+import css from './index.module.css'
 import { faMapMarkedAlt } from '@fortawesome/free-solid-svg-icons'
 
 library.add(faMapMarkedAlt);
@@ -18,17 +18,19 @@ export default () => (
             direction="row"
             justify="center"
             alignItems="center"
-        >
-            <Grid item><Main /></Grid>
+            spacing={ 16 }
+            className={ css.space }>
             <Grid item><Savethedate /></Grid>
         </Grid>
         <Grid
             container
             direction="row"
-            justify="space-evenly"
+            justify="center"
             alignItems="center"
-        >
+            spacing={ 16 }
+            className={ css.space }>
             <Grid item><Instagram /></Grid>
+            <Grid item><Main /></Grid>
             <Grid item><Location /></Grid>
         </Grid>
 
